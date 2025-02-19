@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Server;
 
 import java.io.*;
 import java.net.*;
@@ -66,7 +66,6 @@ public class ChatServer {
                 in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 out = new PrintWriter(socket.getOutputStream(), true);
 
-                out.println("Enter your username:");
                 username = in.readLine();
                 log(username + " joined the chat.");
                 broadcast(username + " joined the chat.");

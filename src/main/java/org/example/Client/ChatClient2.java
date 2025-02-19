@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Client;
+
+import org.example.Server.ChatServer;
 
 import java.io.*;
 import java.net.Socket;
